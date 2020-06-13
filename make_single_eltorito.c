@@ -1,11 +1,33 @@
 /*
-how to use
-
-1. place 32bitEFI.c and 64 bit linux iso into the same directory
-2. rename linux iso to blackmacbook64.iso
-3. compile 32bitEFI.c with "cc -g -Wall -o 32bitEFI.c"
-4. make it executable 'chmod +x 32bitEFI
-5. burn new iso
+ *  FRENCH INSTRUCTIONS
+ *
+ * 1. Copier ce code dans un fichier qu'on appellera 32bitEFI.c
+ * 2 . Mettre son ISO de Ubuntu de 16.04 64 bit dans le même dossier.
+ * 2. Renommer l'ISO : blackmacbook64.iso
+ * 3. Ouvrir un terminal et naviguer dans le dossier en question.
+ * 	Si tu ne sais pas comment naviguer le systeme de fichiers dans un terminal, apprends c'est tres simple.
+ * 	Tout ce dont tu as besoin, c'est de la commande cd (change directory), pwd (print working directory) et ls (list).
+ * 4. Compile dans le terminal le fichier 32bitEFI.c avec la commande : cc -g -Wall -o 32bitEFI 32bitEFI.c
+ * 	Tu viens de creer un fichier exécutable qui s'appelle 32bitEFI
+ * 4. Pour l'executer tu dois en modifier les droits avec la commande : chmod +x 32bitEFI
+ * 5. Maintenant execute le programme avec : ./32bitEFI
+ *
+ * C'est bon tu viens de "flasher" ton ISO, tu peux maintenant l'utiliser.
+ *
+ * ENGLISH INSTRUCTIONS
+ *
+ * 1. Copy the code below in a file called 32bitEFI.c
+ * 2. Put the Ubuntu 16.04 .iso file in the same folder.
+ * 3. Rename the .iso : blackmacbook64.iso
+ * 4. Open a terminal et navigate inn the folder containing both the .c and the .iso
+ * 		If you don't know how to navigate files in the terminal, learn it is really straightforward. All you nedd is the cd (change directory),
+ * 		the ls (list) commands, and maybe the pwd (print working directory) commands.
+ * 5. Compile the 32bitEFI.c file with the following command : cc -g -Wall -o 32bitEFI 32bitEFI.c
+ * 		Congrats you just created an executable file called 32bitEFI
+ * 6. In order to execute it you must make it an executable with : chmod +x 32bitEFI
+ * 7. Now execute 32bitEFI with : ./32bitEFI
+ *
+ * Congrats you just modified your .iso file so it boots on that old 32bits EFI MacBook
 */
 
 #include <sys/types.h>
